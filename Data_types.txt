@@ -1,3 +1,32 @@
+Типове данни
+INT - small/int/big
+
+DECIMAL/NUMERIC - можем да кажем, до кой символ след десетичната запетая да фиксираме
+
+REAL - пази по-малка точност от double
+
+DOUBLE
+
+SERIAL - Създава скрипт, които да инкрементира числото на всеки нов запис, оставя вратата отворена за това ние ръчно да подадем стойност;
+
+GENERATED ALWAYS AS IDENTITY - Създава скрипт, които инкрементира числото, без да ни позволява да въведем стойност ръчно
+
+CHAR (255 symbols)
+
+VARCHAR (65 535 symbols)
+
+TEXT (65 535 symbols)
+
+BLOB
+
+DATE - дата без време - YYYY-MM-DD
+
+TIME - време без дата
+
+TIMESTAMP - дата и час
+
+TIMESTAMPZ - дата, час и часова зона
+
 Name				Aliases					Description
 bigint				int8				signed eight-byte integer
 bigserial			serial8				autoincrementing eight-byte integer
