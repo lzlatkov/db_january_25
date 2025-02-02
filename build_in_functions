@@ -1,0 +1,49 @@
+1.String Functions
+
+1.1. SUBSTRING(string, position, length: optional) - String from Position for Length, също може да бъде използван за това дали един стринг е събстринг на друг.
+1.2. REPLACE(string, string to replace, to replace with) - case sensitive
+1.3. LTRIM, RTRIM - маха празни разстояния от ляво и от дясно
+-нямаме полза да пазим празни места;
+-можем да изтриваме и определен символ;
+-ще изтриваме всеки символ докато не намерим различен от този, който търсим.
+1.4. CHAR_LENGTH - STRING LENGTH;
+1.5. LENGTH - Връща дължината на един стринг.
+1.6. BIT_LENGTH - Всеки символ от ascii таблицата е 8 байтa, за останалите зависи от encoding-a => "café" => c - 1byte, a - 8bits, f - 1byte, é - 16 bits;
+1.7. LEFT, RIGHT, (string count)- вземат n на брой елементи, ляво и дясно; можем да подаваме отрицателни стойности и по този начин да взимаме всико без последните n елементи.
+1.8. LOWER, UPPER, (string)
+1.9. REVERSE, (string)
+1.10. REPEAT, (string, count)
+1.11. INSERT(String, Position, chars count to delete, sub string)
+1.12. POSITION - ex. POSITION('b' IN some_field) - връща индекса, на който е намерило въпросната стойност.
+=== SELECT POSITION('sub' IN 'This is a substring example') AS position; -- 11
+
+
+2. Math Functions 
+- /, -, *, +
+- АBS
+- PI
+2.1. SELECT PI() AS pi_value;
+2.2. SQRT (NUMBER)
+2.3. POW (NUMBER, POWER) - степенуване
+2.4. ROUND - UP >= 5 DOWN 4 <= - (NUMBER, PERCISION)
+2.5. FLOOR, CEIL
+2.6. SIGN(NUMBER) - връща знака като 1, -1 или 0
+2.7. RANDOM() - връща число между 0 и 1
+=== SELECT CEIL(RANDOM() * 100) % 7 AS random_mod_7; връща число между 0 и 6;
+
+
+3. Date Functions
+
+3.1. EXTRACT (PART FROM DATE) - PART - YEAR, MONTH, DAY, MINUTES...
+3.2. AGE() - връща разликата между две дати
+3.4. TO_CHAR()
+3.5. TO_CHAR(NOW() AT TIME ZONE 'UTC', 'YYYY-MM-DD HH24:MI:SS TZD');
+  Резултат '2023-09-20 12:34:56 UTC'
+
+
+4. WILD_CARDS
+
+-LIKE() - подобно на регекс търси дали нещо започва/завършва или двете едновременно на някакъв string/pattern
+% означава 0 или повече символи преди/след string-a
+_ е за попълване на точна позиция
+-REGEXP
