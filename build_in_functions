@@ -15,6 +15,7 @@
 1.10. REPEAT, (string, count)
 1.11. INSERT(String, Position, chars count to delete, sub string)
 1.12. POSITION - ex. POSITION('b' IN some_field) - връща индекса, на който е намерило въпросната стойност.
+1.13. TRANSLATE ()
 === SELECT POSITION('sub' IN 'This is a substring example') AS position; -- 11
 
 
