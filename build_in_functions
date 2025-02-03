@@ -2,7 +2,7 @@
 
 1.1. SUBSTRING(string, position, length: optional) - String from Position for Length, също може да бъде използван за това дали един стринг е събстринг на друг.
 1.2. REPLACE(string, string to replace, to replace with) - case sensitive
-1.3. LTRIM, RTRIM - маха празни разстояния от ляво и от дясно
+1.3. LTRIM, RTRIM, TRIM - маха празни разстояния от ляво и от дясно или отвсякъде
 -нямаме полза да пазим празни места;
 -можем да изтриваме и определен символ;
 -ще изтриваме всеки символ докато не намерим различен от този, който търсим.
